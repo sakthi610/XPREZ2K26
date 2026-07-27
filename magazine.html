@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="XPREZ Magazine — Browse and read the official annual magazine editions of ACGCET. Download PDF editions or read online." />
+  <meta name="keywords" content="XPREZ magazine, ACGCET annual magazine, college publication, newsletter PDF" />
+  <meta name="author" content="XPREZ Editorial Team, ACGCET" />
+  <title>Magazine | XPREZ — Official Newsletter of ACGCET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2›family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo" aria-label="XPREZ Home">
+          <img src="images/logo.png" alt="XPREZ ACGCET Logo" class="navbar__logo-img" width="44" height="44" />
+          <div class="logo-text">
+            <span class="logo-text__name">XPREZ</span>
+            <span class="logo-text__sub">ACGCET</span>
+          </div>
+        </a>
+        <ul class="navbar__nav" role="list">
+          <li><a href="index.html"      class="nav-link">Home</a></li>
+          <li><a href="about.html"      class="nav-link">About</a></li>
+          <li><a href="articles.html"   class="nav-link">Articles</a></li>
+          <li><a href="magazine.html"   class="nav-link active" aria-current="page">Magazine</a></li>
+          <li><a href="gallery.html"    class="nav-link">Gallery</a></li>
+          <li><a href="team.html"       class="nav-link">Editorial Team</a></li>
+          <li><a href="contact.html"    class="nav-link">Contact</a></li>
+        </ul>
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <nav class="navbar__mobile" id="mobileMenu" aria-hidden="true" aria-label="Mobile navigation">
+      <a href="index.html"    class="nav-link">Home</a>
+      <a href="about.html"    class="nav-link">About</a>
+      <a href="articles.html" class="nav-link">Articles</a>
+      <a href="magazine.html" class="nav-link active">Magazine</a>
+      <a href="gallery.html"  class="nav-link">Gallery</a>
+      <a href="team.html"     class="nav-link">Editorial Team</a>
+      <a href="contact.html"  class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Magazine">
+      <div class="container page-hero__inner">
+        <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">â€º</span>
+          <span aria-current="page">Magazine</span>
+        </nav>
+        <h1 class="page-hero__title">XPREZ Magazine</h1>
+        <p class="page-hero__subtitle">
+          Our flagship annual publication — a curated collection of the best stories, achievements, and creative works from ACGCET.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- LATEST EDITION - Removed until a new edition is published -->
+
+    <!-- MAGAZINE ARCHIVE -->
+    <section class="magazine-listing" aria-label="Magazine Archive">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div class="section-label">Archive</div>
+          <h2 class="section-title"></h2>
+          <p class="section-subtitle">Browse our complete collection of XPREZ magazine editions from previous years.</p>
+        </div>
+
+        <!--
+          Future Magazine Archive:
+          These edition cards will be dynamically generated from the database.
+          Backend hook: GET /api/magazines will return an array of edition objects.
+          Each card: { volume, title, year, coverImage, pdfUrl, readUrl, description }
+        -->
+        <div class="magazine-grid stagger-children" role="list">
+
+          <!-- Editions will be listed here once published -->
+
+          <!-- Future Magazine Edition: Placeholder for next edition -->
+          <div class="magazine-edition-card" role="listitem" style="border: 2px dashed var(--color-mid-gray);">
+            <div class="magazine-edition-card__cover" role="img" aria-label="Coming Soon" style="background: var(--color-light-gray);">
+              <div class="magazine-edition-card__cover-inner" style="background: transparent;">
+                <div style="text-align: center;">
+                  <div style="font-size: 3rem; margin-bottom: 0.5rem; opacity: 0.4;">››</div>
+                  <div style="font-size: var(--text-sm); color: var(--color-gray); font-weight: 600;">Coming Soon</div>
+                  <div style="font-size: var(--text-xs); color: var(--color-gray); margin-top: 0.25rem;">Annual 2026 · Vol. VI</div>
+                </div>
+              </div>
+            </div>
+            <div class="magazine-edition-card__body">
+              <h3 class="magazine-edition-card__name" style="color: var(--color-text-muted);">XPREZ Annual Edition 2026</h3>
+              <p class="magazine-edition-card__date">Expected: Mid 2026</p>
+              <div class="magazine-edition-card__actions">
+                <a href="contact.html" class="btn btn--secondary btn--sm" id="mag2026ContributeBtn">Contribute</a>
+              </div>
+            </div>
+          </div>
+          <!-- Future Magazine Editions: More editions will be added to database -->
+
+        </div><!-- /magazine-grid -->
+
+      </div>
+    </section>
+
+
+    <!-- PDF VIEWER PLACEHOLDER -->
+    <!--
+      Future PDF Viewer:
+      When a user clicks "Read Online", a PDF viewer (e.g., PDF.js, FlipHTML5, or Issuu embed)
+      will be rendered here in a modal or dedicated viewer page.
+      Backend hook: The viewer URL and PDF source will come from the magazine API endpoint.
+    -->
+
+    <!-- CONTRIBUTE CTA -->
+    <section class="contact-cta" aria-label="Contribute to the Magazine">
+      <div class="container">
+        <h2 class="contact-cta__title reveal">Contribute to the Next Edition</h2>
+        <p class="contact-cta__subtitle reveal">
+          Every ACGCET student and faculty member can contribute to XPREZ. Submit your articles, photographs, creative writing, or project reports for the next annual edition.
+        </p>
+        <div class="contact-cta__actions reveal">
+          <a href="contact.html" class="btn btn--ghost btn--lg" id="magazineContactBtn">Submit Your Work</a>
+          <a href="articles.html" class="btn btn--gold btn--lg" id="magazineReadArticlesBtn">Read Articles</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="images/logo.png" alt="XPREZ Logo" style="width:42px;height:42px;object-fit:contain;" />
+            <div class="logo-text">
+              <span class="logo-text__name">XPREZ</span>
+              <span class="logo-text__sub">ACGCET</span>
+            </div>
+          </div>
+          <p class="footer__tagline">The official newsletter of Alagappa Chettiar Government College of Engineering and Technology.</p>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__col-title">Quick Links</h3>
+          <nav class="footer__links" aria-label="Footer quick links">
+            <a href="index.html"    class="footer__link">Home</a>
+            <a href="about.html"    class="footer__link">About XPREZ</a>
+            <a href="articles.html" class="footer__link">Articles</a>
+            <a href="magazine.html" class="footer__link">Magazine</a>
+            <a href="gallery.html"  class="footer__link">Gallery</a>
+            <a href="team.html"     class="footer__link">Editorial Team</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__col-title">Editions</h3>
+          <nav class="footer__links" aria-label="Magazine editions">
+            <a href="magazine.html" class="footer__link">Annual 2025 — Vol. V</a>
+            <a href="magazine.html" class="footer__link">Annual 2024 — Vol. IV</a>
+            <a href="magazine.html" class="footer__link">Annual 2023 — Vol. III</a>
+            <a href="magazine.html" class="footer__link">Annual 2022 — Vol. II</a>
+            <a href="magazine.html" class="footer__link">Inaugural 2021 — Vol. I</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__col-title">Contact</h3>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">📍</span>
+            <span class="footer__contact-text">ACGCET, Karaikudi, Tamil Nadu — 630 003</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">📧</span>
+            <a href="mailto:xprez@acgcet.edu.in" class="footer__link footer__contact-text">xprez@acgcet.edu.in</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; <span id="currentYear"></span> XPREZ — Official Newsletter of ACGCET. All rights reserved.</p>
+        <nav class="footer__bottom-links" aria-label="Footer legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

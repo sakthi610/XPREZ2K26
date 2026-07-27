@@ -1,0 +1,577 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="XPREZ — The official newsletter of Alagappa Chettiar Government College of Engineering and Technology (ACGCET). Read campus news, student achievements, technical blogs, and creative articles." />
+  <meta name="keywords" content="XPREZ, ACGCET, newsletter, college magazine, campus news, student achievements, Karaikudi" />
+  <meta name="author" content="XPREZ Editorial Team, ACGCET" />
+  <meta property="og:title" content="XPREZ | Official Newsletter of ACGCET" />
+  <meta property="og:description" content="The official newsletter club of ACGCET — documenting the life, culture, innovation, and achievements of ACGCET." />
+  <meta property="og:type" content="website" />
+
+  <title>XPREZ | Official Newsletter of ACGCET</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2›family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container navbar__inner">
+
+        <!-- Logo -->
+        <a href="index.html" class="navbar__logo" aria-label="XPREZ Home">
+          <img src="images/logo.png" alt="XPREZ ACGCET Logo" class="navbar__logo-img" width="44" height="44" />
+          <div class="logo-text">
+            <span class="logo-text__name">XPREZ</span>
+            <span class="logo-text__sub">ACGCET</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="navbar__nav" role="list">
+          <li><a href="index.html"      class="nav-link active"  aria-current="page">Home</a></li>
+          <li><a href="about.html"      class="nav-link">About</a></li>
+          <li><a href="articles.html"   class="nav-link">Articles</a></li>
+          <li><a href="magazine.html"   class="nav-link">Magazine</a></li>
+          <li><a href="gallery.html"    class="nav-link">Gallery</a></li>
+          <li><a href="team.html"       class="nav-link">Editorial Team</a></li>
+          <li><a href="contact.html"    class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <nav class="navbar__mobile" id="mobileMenu" aria-hidden="true" aria-label="Mobile navigation">
+      <a href="index.html"    class="nav-link active">Home</a>
+      <a href="about.html"    class="nav-link">About</a>
+      <a href="articles.html" class="nav-link">Articles</a>
+      <a href="magazine.html" class="nav-link">Magazine</a>
+      <a href="gallery.html"  class="nav-link">Gallery</a>
+      <a href="team.html"     class="nav-link">Editorial Team</a>
+      <a href="contact.html"  class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main id="main-content">
+
+    <!-- ====================================
+         HERO SECTION
+         ==================================== -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero__bg-pattern" aria-hidden="true"></div>
+      <div class="hero__grid-lines" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <div class="hero__text">
+
+          <div class="hero__eyebrow">
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            Alagappa Chettiar Government College of Engineering &amp; Technology
+          </div>
+
+          <h1 class="hero__title">
+            The Voice of
+            <span class="accent">ACGCET</span>
+          </h1>
+
+          <p class="hero__tagline">
+            Documenting brilliance, one story at a time.
+          </p>
+
+          <p class="hero__description">
+            XPREZ is the official newsletter of ACGCET — bringing you campus news, student achievements,
+            technical innovations, and creative stories from the heart of Karaikudi.
+          </p>
+
+          <div class="hero__actions">
+            <a href="articles.html" class="btn btn--primary btn--lg" id="heroReadArticles">
+              Read Articles
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="magazine.html" class="btn btn--ghost btn--lg" id="heroExploreMagazine">
+              Explore Magazine
+            </a>
+          </div>
+
+          <div class="hero__stats" role="list" aria-label="XPREZ statistics">
+            <div class="hero__stat" role="listitem">
+              <span id="hero-stat-editions" class="hero__stat-number">...</span>
+              <span class="hero__stat-label">Editions</span>
+            </div>
+            <div class="hero__stat" role="listitem">
+              <span id="hero-stat-articles" class="hero__stat-number">...</span>
+              <span class="hero__stat-label">Articles</span>
+            </div>
+            <div class="hero__stat" role="listitem">
+              <span id="hero-stat-contributors" class="hero__stat-number">...</span>
+              <span class="hero__stat-label">Contributors</span>
+            </div>
+          </div>
+
+        </div><!-- /hero__text -->
+
+        <!-- Hero Visual (hidden on mobile) -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__magazine-mockup">
+
+            <div class="magazine-card">
+              <div class="magazine-card__edition">Latest Edition · 2025</div>
+              <div class="magazine-card__img-placeholder">
+                <span>Magazine Cover</span>
+                <!-- Future Magazine Cover Image -->
+              </div>
+              <h3 class="magazine-card__title">XPREZ Annual Edition 2025</h3>
+              <p class="magazine-card__meta">ACGCET Official Newsletter</p>
+            </div>
+
+            <!-- Floating stat cards -->
+            <div class="hero__floating-card hero__floating-card--1">
+              <div class="floating-card__label">Latest Issue</div>
+              
+              <div class="floating-card__value">Annual 2025</div>
+            </div>
+
+            <div class="hero__floating-card hero__floating-card--2">
+              <div class="floating-card__label">Contributors</div>
+              <div class="floating-card__value">30+</div>
+              <div class="floating-card__sub">Students &amp; Faculty</div>
+            </div>
+
+          </div>
+        </div><!-- /hero__visual -->
+
+      </div><!-- /hero__content -->
+    </section>
+
+
+    <!-- ====================================
+         ABOUT PREVIEW
+         ==================================== -->
+    <section class="section about-preview" id="about-preview" aria-label="About XPREZ">
+      <div class="container">
+        <div class="about-preview__inner">
+
+          <div class="about-preview__text reveal-left">
+            <div class="section-header">
+              <div class="section-label">Who We Are</div>
+              <h2 class="section-title">Giving a Voice to Every ACGCET Story</h2>
+            </div>
+
+            <p class="about-preview__body">
+              XPREZ is the official newsletter club of Alagappa Chettiar Government College of Engineering and Technology.
+              We are a team of passionate students and faculty dedicated to capturing and sharing the richness of campus life —
+              from technical innovations and research to sports, arts, and alumni stories.
+            </p>
+
+            <div class="about-preview__features stagger-children">
+              <div class="about-feature">
+                <div class="about-feature__icon" aria-hidden="true">📰</div>
+                <div class="about-feature__text">
+                  <div class="about-feature__name">Campus News</div>
+                  <div class="about-feature__desc">Latest updates from around the campus</div>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature__icon" aria-hidden="true">🏆</div>
+                <div class="about-feature__text">
+                  <div class="about-feature__name">Achievements</div>
+                  <div class="about-feature__desc">Celebrating student and faculty excellence</div>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature__icon" aria-hidden="true">💡</div>
+                <div class="about-feature__text">
+                  <div class="about-feature__name">Technical Blogs</div>
+                  <div class="about-feature__desc">In-depth articles on engineering &amp; tech</div>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature__icon" aria-hidden="true">🎨</div>
+                <div class="about-feature__text">
+                  <div class="about-feature__name">Creative Content</div>
+                  <div class="about-feature__desc">Poetry, art, photography &amp; more</div>
+                </div>
+              </div>
+            </div>
+
+            <a href="about.html" class="btn btn--secondary" id="homeAboutLearnMore">Learn More About Us</a>
+          </div>
+
+          <!-- About Visual -->
+          <div class="about-preview__visual reveal-right" aria-hidden="true">
+            <div class="about-preview__img">
+            </div>
+            <div class="about-preview__badge">
+              <div class="about-preview__badge-year">Est.</div>
+              <div class="about-preview__badge-text">ACGCET · Karaikudi</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================
+         LATEST ARTICLES
+         ==================================== -->
+    <section class="section" id="latest-articles" aria-label="Latest Articles">
+      <div class="container">
+
+        <div class="section-header flex justify-between items-center reveal">
+          <div>
+            <div class="section-label">Fresh From the Editors</div>
+            <h2 class="section-title">Latest Articles</h2>
+          </div>
+          <a href="articles.html" class="view-all-link" id="homeViewAllArticles">
+            View All
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="articles-grid stagger-children">
+
+          <!-- Graduation Day Article -->
+          <article class="article-card" data-category="campus">
+            <div class="article-card__img" style="background-image:url('images/graduation-day-1.png');background-size:cover;background-position:center;background-repeat:no-repeat;background-color:var(--color-primary);">
+              <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.08) 55%,transparent 100%);display:flex;align-items:flex-end;padding:1rem 1rem 0.75rem;">
+                <span style="color:#fff;font-family:var(--font-heading);font-size:1rem;font-weight:700;line-height:1.3;text-shadow:0 2px 8px rgba(0,0,0,0.9);">A Proud Milestone: ACGCET Graduation Day 2026</span>
+              </div>
+              <span class="article-card__category">Campus Events</span>
+            </div>
+            <div class="article-card__body">
+              <h3 class="article-card__title">A Proud Milestone: ACGCET Celebrates Graduation Day 2026</h3>
+              <p class="article-card__excerpt">The Graduation Day Ceremony of ACGCET was celebrated with immense pride, honoring the graduating Class of 2025...</p>
+              <div class="article-card__footer">
+                <div class="article-card__author">
+                  <div class="author-avatar" aria-hidden="true">XP</div>
+                  <div class="author-info">
+                    <div class="author-info__name">XPREZ Editorial Team</div>
+                    <div class="author-info__date">July 2026</div>
+                  </div>
+                </div>
+                <a href="article-graduation-day.html" class="article-card__read-more" aria-label="Read about Graduation Day">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Platinum Jubilee Alumni Article -->
+          <article class="article-card" data-category="alumni">
+            <div class="article-card__img" style="background-image:url('images/jubilee-event.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;background-color:var(--color-primary);">
+              <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.08) 55%,transparent 100%);display:flex;align-items:flex-end;padding:1rem 1rem 0.75rem;">
+                <span style="color:#fff;font-family:var(--font-heading);font-size:1rem;font-weight:700;line-height:1.3;text-shadow:0 2px 8px rgba(0,0,0,0.9);">75th Platinum Jubilee Inaugural Function</span>
+              </div>
+              <span class="article-card__category">Alumni</span>
+            </div>
+            <div class="article-card__body">
+              <h3 class="article-card__title">75th Year Platinum Jubilee Celebrations Inaugural Function</h3>
+              <p class="article-card__excerpt">ACGCET's 75-year milestone commenced on 20th July 2026 at Murugappa Hall — with the AIFRP foundation stone, Platinum Jubilee logo launch, and an inspiring address by Dr. K. Ramesha, Director, CECRI.</p>
+              <div class="article-card__footer">
+                <div class="article-card__author">
+                  <div class="author-avatar" aria-hidden="true">XP</div>
+                  <div class="author-info">
+                    <div class="author-info__name">XPREZ Editorial Team</div>
+                    <div class="author-info__date">July 20, 2026</div>
+                  </div>
+                </div>
+                <a href="article.html" class="article-card__read-more" aria-label="Read about the Platinum Jubilee celebrations">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /articles-grid -->
+        <!-- Future Articles: More article cards will be added here -->
+
+      </div>
+    </section>
+
+
+    <!-- Magazine section removed — will be added when magazine editions are ready -->
+
+
+    <!-- ====================================
+         GALLERY PREVIEW
+         ==================================== -->
+    <section class="section" id="gallery-preview" aria-label="Gallery Preview">
+      <div class="container">
+
+        <div class="section-header flex justify-between items-center reveal">
+          <div>
+            <div class="section-label">Moments Captured</div>
+            <h2 class="section-title">Gallery</h2>
+          </div>
+          <a href="gallery.html" class="view-all-link" id="homeViewGallery">
+            View All
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Future Gallery: Replace with actual campus photographs -->
+        <div class="gallery-grid reveal" role="list" aria-label="Gallery preview images">
+
+          <div class="gallery-item gallery-item--featured" role="listitem" tabindex="0" aria-label="Platinum Jubilee Inaugural Event">
+            <div class="gallery-item__inner">
+              <img src="images/jubilee-event.jpg" alt="Platinum Jubilee Inaugural Event" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="gallery-item__overlay" aria-hidden="true">
+              <span class="gallery-item__overlay-icon">🔍</span>
+            </div>
+          </div>
+
+        </div>
+        <!-- Future Gallery Preview: More images will load from gallery database -->
+
+      </div>
+    </section>
+
+
+    <!-- ====================================
+         EDITORIAL TEAM PREVIEW
+         ==================================== -->
+    <section class="section team-preview" id="team-preview" aria-label="Editorial Team">
+      <div class="container">
+
+        <div class="section-header text-center reveal">
+          <div class="section-label">The People Behind XPREZ</div>
+          <h2 class="section-title">Meet Our Editorial Team</h2>
+          <p class="section-subtitle">A dedicated group of students and faculty working tirelessly to bring ACGCET's stories to life.</p>
+        </div>
+
+        <!-- Future Team: Replace with actual team member data -->
+        <div class="team-grid stagger-children" role="list">
+
+          <div class="team-card" role="listitem">
+            <div class="team-card__avatar team-card__avatar--faculty" aria-hidden="true">TR</div>
+            <div class="team-card__name">Prof. T. Rajavijay</div>
+            <div class="team-card__role">Faculty Advisor</div>
+            <div class="team-card__dept">ACGCET</div>
+          </div>
+
+          <div class="team-card" role="listitem">
+            <div class="team-card__avatar team-card__avatar--chief" aria-hidden="true">KA</div>
+            <div class="team-card__name">K. Ananthakumar</div>
+            <div class="team-card__role">Editor-in-Chief</div>
+            <div class="team-card__dept">Final Year · Dept. of EEE</div>
+          </div>
+
+          <div class="team-card" role="listitem">
+            <div class="team-card__avatar team-card__avatar--design" aria-hidden="true">VS</div>
+            <div class="team-card__name">V. Sakthi Priyan</div>
+            <div class="team-card__role">Chief Designer</div>
+            <div class="team-card__dept">Final Year · Dept. of ECE</div>
+          </div>
+
+          <div class="team-card" role="listitem">
+            <div class="team-card__avatar team-card__avatar--design" aria-hidden="true">GM</div>
+            <div class="team-card__name">G. Muthukpriya</div>
+            <div class="team-card__role">Creative Head</div>
+            <div class="team-card__dept">Final Year · Dept. of ECE</div>
+          </div>
+
+        </div>
+
+        <div class="text-center" style="margin-top: var(--space-8);">
+          <a href="team.html" class="btn btn--secondary" id="homeViewFullTeam">View Full Team</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================
+         CONTACT CTA
+         ==================================== -->
+    <section class="contact-cta" id="contact-cta" aria-label="Contact Call to Action">
+      <div class="container">
+        <h2 class="contact-cta__title reveal">Have a Story to Share›</h2>
+        <p class="contact-cta__subtitle reveal">
+          Submit your articles, photographs, or creative work to be featured in the next XPREZ edition.
+          We welcome contributions from all ACGCET students and faculty.
+        </p>
+        <div class="contact-cta__actions reveal">
+          <a href="contact.html" class="btn btn--ghost btn--lg" id="homeContactUs">Contact Us</a>
+          <!-- Future: Article submission system link -->
+          <a href="articles.html" class="btn btn--gold btn--lg" id="homeReadMore">Read More Articles</a>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand Column -->
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="images/logo.png" alt="XPREZ Logo" style="width:42px;height:42px;object-fit:contain;" />
+            <div class="logo-text">
+              <span class="logo-text__name">XPREZ</span>
+              <span class="logo-text__sub">ACGCET</span>
+            </div>
+          </div>
+          <p class="footer__tagline">
+            The official newsletter of Alagappa Chettiar Government College of Engineering and Technology —
+            documenting the life, culture, innovation, and achievements of ACGCET.
+          </p>
+          <div class="footer__social" role="list" aria-label="Social media links">
+            <!-- Future: Add actual social media profile links -->
+            <a href="#" class="social-link" role="listitem" aria-label="Instagram" title="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="social-link" role="listitem" aria-label="LinkedIn" title="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="social-link" role="listitem" aria-label="YouTube" title="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="#" class="social-link" role="listitem" aria-label="Email" title="Email us">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Quick Links</h3>
+          <nav class="footer__links" aria-label="Footer quick links">
+            <a href="index.html"    class="footer__link">Home</a>
+            <a href="about.html"    class="footer__link">About XPREZ</a>
+            <a href="articles.html" class="footer__link">Articles</a>
+            <a href="magazine.html" class="footer__link">Magazine</a>
+            <a href="gallery.html"  class="footer__link">Gallery</a>
+            <a href="team.html"     class="footer__link">Editorial Team</a>
+          </nav>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Categories</h3>
+          <nav class="footer__links" aria-label="Article categories">
+            <!-- Future: Dynamic category links -->
+            <a href="articles.html" class="footer__link">Campus News</a>
+            <a href="articles.html" class="footer__link">Technology</a>
+            <a href="articles.html" class="footer__link">Achievements</a>
+            <a href="articles.html" class="footer__link">Alumni Stories</a>
+            <a href="articles.html" class="footer__link">Creative Writing</a>
+            <a href="articles.html" class="footer__link">Sports</a>
+          </nav>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Contact</h3>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">📍</span>
+            <span class="footer__contact-text">
+              Alagappa Chettiar Government College of Engineering and Technology,
+              Karaikudi, Tamil Nadu — 630 003
+            </span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">📧</span>
+            <a href="mailto:xprez@acgcet.edu.in" class="footer__link footer__contact-text">xprez@acgcet.edu.in</a>
+          </div>
+          <div style="margin-top: var(--space-5);">
+            <a href="contact.html" class="btn btn--ghost btn--sm" id="footerContactUs">Get in Touch</a>
+          </div>
+        </div>
+
+      </div><!-- /footer__grid -->
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="currentYear"></span> XPREZ — Official Newsletter of ACGCET. All rights reserved.
+        </p>
+        <nav class="footer__bottom-links" aria-label="Footer legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
+
+  <script>
+    // Dynamic Stats Logic
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const fetchAndCount = async (url, selector, fallback) => {
+          try {
+            const res = await fetch(url);
+            if (!res.ok) throw new Error('Network error');
+            const text = await res.text();
+            const doc = new DOMParser().parseFromString(text, 'text/html');
+            return doc.querySelectorAll(selector).length || fallback;
+          } catch (e) {
+            return fallback;
+          }
+        };
+
+        const [articles, magazines, team] = await Promise.all([
+          fetchAndCount('articles.html', '.article-card', 12),
+          fetchAndCount('magazine.html', '.magazine-cover__card', 4),
+          fetchAndCount('team.html', '.team-card', 30)
+        ]);
+
+        const aEl = document.getElementById('hero-stat-articles');
+        const mEl = document.getElementById('hero-stat-editions');
+        const cEl = document.getElementById('hero-stat-contributors');
+        
+        if (aEl) aEl.textContent = '1'+ '+';
+        if (mEl) mEl.textContent = '0' + '+';
+        if (cEl) cEl.textContent = '30' + '+';
+      } catch (err) {
+        console.error('Failed to load dynamic stats:', err);
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+

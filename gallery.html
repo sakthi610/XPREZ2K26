@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="XPREZ Gallery — Browse photographs from ACGCET campus events, cultural fests, technical symposiums, and everyday campus life." />
+  <meta name="keywords" content="XPREZ gallery, ACGCET photos, campus events, college photography" />
+  <meta name="author" content="XPREZ Editorial Team, ACGCET" />
+  <title>Gallery | XPREZ — Official Newsletter of ACGCET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2›family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo" aria-label="XPREZ Home">
+          <img src="images/logo.png" alt="XPREZ ACGCET Logo" class="navbar__logo-img" width="44" height="44" />
+          <div class="logo-text">
+            <span class="logo-text__name">XPREZ</span>
+            <span class="logo-text__sub">ACGCET</span>
+          </div>
+        </a>
+        <ul class="navbar__nav" role="list">
+          <li><a href="index.html"      class="nav-link">Home</a></li>
+          <li><a href="about.html"      class="nav-link">About</a></li>
+          <li><a href="articles.html"   class="nav-link">Articles</a></li>
+          <li><a href="magazine.html"   class="nav-link">Magazine</a></li>
+          <li><a href="gallery.html"    class="nav-link active" aria-current="page">Gallery</a></li>
+          <li><a href="team.html"       class="nav-link">Editorial Team</a></li>
+          <li><a href="contact.html"    class="nav-link">Contact</a></li>
+        </ul>
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <nav class="navbar__mobile" id="mobileMenu" aria-hidden="true" aria-label="Mobile navigation">
+      <a href="index.html"    class="nav-link">Home</a>
+      <a href="about.html"    class="nav-link">About</a>
+      <a href="articles.html" class="nav-link">Articles</a>
+      <a href="magazine.html" class="nav-link">Magazine</a>
+      <a href="gallery.html"  class="nav-link active">Gallery</a>
+      <a href="team.html"     class="nav-link">Editorial Team</a>
+      <a href="contact.html"  class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Gallery">
+      <div class="container page-hero__inner">
+        <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">â€º</span>
+          <span aria-current="page">Gallery</span>
+        </nav>
+        <h1 class="page-hero__title">Gallery</h1>
+        <p class="page-hero__subtitle">
+          Visual stories from the ACGCET campus — events, achievements, campus life, and memorable moments.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- GALLERY FILTER BAR -->
+    <!--
+      Future: Gallery category filters will be dynamic.
+      Backend hook: GET /api/gallery/categories for category list.
+      Selecting a category: GET /api/gallery›category={cat}&page={n}
+    -->
+    <div class="search-filter-bar gallery-filter" role="search" aria-label="Filter gallery images">
+      <div class="container">
+        <div class="filter-pills" role="group" aria-label="Filter by category">
+          <button class="filter-pill active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-pill" data-filter="events" aria-pressed="false">Events</button>
+          <button class="filter-pill" data-filter="tech-fest" aria-pressed="false">Tech Fest</button>
+          <button class="filter-pill" data-filter="cultural" aria-pressed="false">Cultural</button>
+          <button class="filter-pill" data-filter="sports" aria-pressed="false">Sports</button>
+          <button class="filter-pill" data-filter="campus" aria-pressed="false">Campus Life</button>
+          <button class="filter-pill" data-filter="achievements" aria-pressed="false">Achievements</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- GALLERY LISTING -->
+    <section class="gallery-listing" aria-label="Photo Gallery">
+      <div class="container">
+
+        <!--
+          Future Gallery:
+          Gallery items will be loaded from database.
+          Backend hook: GET /api/gallery›page={n}&category={cat}
+          Each item: { id, src, thumbnail, alt, caption, category, date }
+          data-src attribute should point to the actual image URL for lightbox.
+        -->
+        <div class="gallery-full-grid" id="galleryGrid" role="list">
+
+          <!-- Gallery Item 1 -->
+          <div class="gallery-full-item"
+               role="listitem"
+               tabindex="0"
+               aria-label="Platinum Jubilee Inaugural Event"
+               data-category="events"
+               data-src="images/jubilee-event.jpg"
+               data-alt="Platinum Jubilee Inaugural Event">
+            <div class="gallery-full-item__inner">
+              <img src="images/jubilee-event.jpg" alt="Platinum Jubilee Inaugural Event" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="gallery-full-item__overlay" aria-hidden="true">
+              <span class="gallery-full-item__overlay-icon">🔍</span>
+              <span class="gallery-full-item__caption">Platinum Jubilee Inaugural Event</span>
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="gallery-full-item"
+               role="listitem"
+               tabindex="0"
+               aria-label="Graduation Day 2026 — Degree Conferment"
+               data-category="events"
+               data-src="images/graduation-day-1.png"
+               data-alt="Graduation Day 2026 — Degree Conferment, ACGCET">
+            <div class="gallery-full-item__inner">
+              <img src="images/graduation-day-1.png" alt="Graduation Day 2026 — Degree Conferment" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="gallery-full-item__overlay" aria-hidden="true">
+              <span class="gallery-full-item__overlay-icon">🔍</span>
+              <span class="gallery-full-item__caption">🎓 Graduation Day 2026 — Degree Conferment</span>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="gallery-full-item"
+               role="listitem"
+               tabindex="0"
+               aria-label="Graduation Day 2026 — A Proud Moment"
+               data-category="events"
+               data-src="images/graduation-day-2.png"
+               data-alt="Graduation Day 2026 — A Proud Moment, ACGCET">
+            <div class="gallery-full-item__inner">
+              <img src="images/graduation-day-2.png" alt="Graduation Day 2026 — A Proud Moment" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="gallery-full-item__overlay" aria-hidden="true">
+              <span class="gallery-full-item__overlay-icon">🔍</span>
+              <span class="gallery-full-item__caption">🏅 Graduation Day 2026 — A Proud Moment</span>
+            </div>
+          </div>
+
+        <!-- Gallery Pagination / Load More -->
+        <!--
+          Future: Load more button will trigger GET /api/gallery›page={n}&category={cat}
+          Results appended to gallery grid without page reload.
+        -->
+        <div style="text-align:center; margin-top: var(--space-10);">
+          <button class="btn btn--secondary btn--lg" id="loadMoreGallery" aria-label="Load more gallery images">
+            Load More
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          </button>
+          <!-- Future: Replace with dynamic pagination when backend is connected -->
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <!--
+    Lightbox is initialized by JS LightboxModule when gallery items are clicked.
+    For placeholder items (no data-src), it logs a message and skips.
+    When real images are added, populate data-src on each gallery item.
+  -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Image viewer" aria-modal="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close image viewer" title="Close">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="lightbox__content">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+      <!-- Future: Lightbox caption and navigation arrows will be added here -->
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="images/logo.png" alt="XPREZ Logo" style="width:42px;height:42px;object-fit:contain;" />
+            <div class="logo-text">
+              <span class="logo-text__name">XPREZ</span>
+              <span class="logo-text__sub">ACGCET</span>
+            </div>
+          </div>
+          <p class="footer__tagline">The official newsletter of Alagappa Chettiar Government College of Engineering and Technology.</p>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__col-title">Quick Links</h3>
+          <nav class="footer__links" aria-label="Footer quick links">
+            <a href="index.html"    class="footer__link">Home</a>
+            <a href="about.html"    class="footer__link">About XPREZ</a>
+            <a href="articles.html" class="footer__link">Articles</a>
+            <a href="magazine.html" class="footer__link">Magazine</a>
+            <a href="gallery.html"  class="footer__link">Gallery</a>
+            <a href="team.html"     class="footer__link">Editorial Team</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__col-title">Gallery Categories</h3>
+          <nav class="footer__links" aria-label="Gallery categories">
+            <a href="gallery.html" class="footer__link">Events</a>
+            <a href="gallery.html" class="footer__link">Tech Fest</a>
+            <a href="gallery.html" class="footer__link">Cultural</a>
+            <a href="gallery.html" class="footer__link">Sports</a>
+            <a href="gallery.html" class="footer__link">Campus Life</a>
+            <a href="gallery.html" class="footer__link">Achievements</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__col-title">Contact</h3>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">📍</span>
+            <span class="footer__contact-text">ACGCET, Karaikudi, Tamil Nadu — 630 003</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon" aria-hidden="true">📧</span>
+            <a href="mailto:xprez@acgcet.edu.in" class="footer__link footer__contact-text">xprez@acgcet.edu.in</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; <span id="currentYear"></span> XPREZ — Official Newsletter of ACGCET. All rights reserved.</p>
+        <nav class="footer__bottom-links" aria-label="Footer legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
