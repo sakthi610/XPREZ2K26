@@ -2615,6 +2615,23 @@ main {
 .stagger-children.visible > *:nth-child(6) { opacity: 1; transform: translateY(0); transition-delay: 0.3s; }
 .stagger-children.visible > *:nth-child(7) { opacity: 1; transform: translateY(0); transition-delay: 0.35s; }
 .stagger-children.visible > *:nth-child(8) { opacity: 1; transform: translateY(0); transition-delay: 0.4s; }
+.stagger-children.visible > *:nth-child(9) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.45s;
+}
+
+.stagger-children.visible > *:nth-child(10) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+.stagger-children.visible > *:nth-child(11) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.55s;
+}
 
 /* ============================================================
    27. UTILITY CLASSES
