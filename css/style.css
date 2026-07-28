@@ -1444,7 +1444,7 @@ main {
   font-weight: var(--weight-bold);
   color: var(--color-white);
   border: 3px solid var(--color-mid-gray);
-  overflow: hidden;
+  
   transition: border-color var(--transition-base);
 }
 
