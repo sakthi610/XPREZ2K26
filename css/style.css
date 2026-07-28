@@ -1412,6 +1412,14 @@ main {
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-6);
 }
+.team-full-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
+    height:auto !important;
+    max-height:none !important;
+    overflow:visible !important;
+}
 
 .team-card {
   background: var(--color-white);
